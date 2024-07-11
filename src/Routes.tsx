@@ -9,7 +9,7 @@ const routers = createBrowserRouter([
     children: [{ path: 'products', element: <ProductsPage /> }],
   },
 ]);
-
+// App.js
 export function Routes() {
   return <RouterProvider router={routers} />;
 }
