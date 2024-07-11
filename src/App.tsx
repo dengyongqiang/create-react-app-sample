@@ -1,16 +1,14 @@
 import React from 'react';
 import './App.css';
-import { Alert } from './Alert';
+import { Header } from './Header';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="container">
-      <Alert
-        heading="Success"
-        children="Everything is really good"
-        closable={true}
-      />
-    </div>
+    <>
+      <Header />
+      <Outlet />
+    </>
   );
 }
 
